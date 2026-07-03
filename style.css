@@ -1,0 +1,191 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Tahoma, sans-serif;
+ }
+
+ body {
+     background: #050b1b;
+     color: #fff;
+     overflow-x: hidden;
+ }
+
+ .background {
+     position: fixed;
+     inset: 0;
+     z-index: -2;
+     background: linear-gradient(135deg, #00142d, #003d8d, #007cff, #00142d);
+     background-size: 400% 400%;
+     animation: bgMove 15s ease infinite;
+ }
+
+ @keyframes bgMove {
+     0% {
+         background-position: 0% 50%;
+     }
+
+     50% {
+         background-position: 100% 50%;
+     }
+
+     100% {
+         background-position: 0% 50%;
+     }
+ }
+
+ .container {
+     width: 900px;
+     max-width: 95%;
+     margin: 40px auto;
+     padding: 35px;
+     background: rgba(10, 20, 45, .88);
+     border: 1px solid rgba(0, 180, 255, .3);
+     border-radius: 24px;
+     backdrop-filter: blur(15px);
+     box-shadow: 0 0 40px rgba(0, 180, 255, .25);
+ }
+
+ header {
+     text-align: center;
+     margin-bottom: 30px;
+ }
+
+ header h1 {
+     font-size: 34px;
+     color: #77e4ff;
+     margin-bottom: 10px;
+ }
+
+ header p {
+     color: #bcdfff;
+ }
+
+ form {
+     display: flex;
+     flex-direction: column;
+     gap: 18px;
+     margin-bottom: 35px;
+ }
+
+ input {
+     padding: 16px;
+     border-radius: 14px;
+     border: 2px solid #0d5ca5;
+     background: #08172d;
+     color: #fff;
+     font-size: 16px;
+     outline: none;
+     transition: .25s;
+ }
+
+ input::placeholder {
+     color: #d5ebff;
+ }
+
+ input:focus {
+     border-color: #39d4ff;
+     box-shadow: 0 0 15px rgba(0, 200, 255, .4);
+ }
+
+ button {
+     padding: 18px;
+     border: none;
+     border-radius: 14px;
+     background: linear-gradient(90deg, #008cff, #00c8ff);
+     color: #fff;
+     font-size: 20px;
+     font-weight: bold;
+     cursor: pointer;
+     transition: .25s;
+ }
+
+ button:hover {
+     transform: translateY(-2px);
+     box-shadow: 0 0 20px rgba(0, 200, 255, .5);
+ }
+
+ .payment,
+ .rules {
+     margin-top: 25px;
+     padding: 22px;
+     background: #08172d;
+     border: 1px solid #1467b6;
+     border-radius: 18px;
+ }
+
+ .payment h2,
+ .rules h2 {
+     color: #74e2ff;
+     margin-bottom: 15px;
+     text-align: center;
+ }
+
+ .payment p,
+ .rules p,
+ .rules li {
+     line-height: 1.8;
+     color: #fff;
+ }
+
+ .rubika {
+     margin: 12px 0;
+     font-size: 24px;
+     font-weight: bold;
+     color: #00f2ff;
+     text-align: center;
+ }
+
+ .card {
+     margin: 12px 0;
+     font-size: 22px;
+     font-weight: bold;
+     letter-spacing: 2px;
+     text-align: center;
+     color: #ffffff;
+ }
+
+ .price {
+     margin-top: 10px;
+     font-size: 22px;
+     font-weight: bold;
+     color: #67ff95;
+     text-align: center;
+ }
+
+ .warning {
+     margin-top: 12px;
+     font-weight: bold;
+     text-align: center;
+     color: #ffd966;
+ }
+
+ .rulesBox {
+     max-height: 450px;
+     overflow-y: auto;
+     padding-left: 10px;
+ }
+
+ .rulesBox h3 {
+     margin-top: 18px;
+     margin-bottom: 10px;
+     color: #66d8ff;
+ }
+
+ .rulesBox ul {
+     padding-right: 20px;
+     margin-bottom: 10px;
+ }
+
+ .rulesBox li {
+     margin: 6px 0;
+ }
+
+ ::-webkit-scrollbar {
+     width: 10px;
+ }
+
+ ::-webkit-scrollbar-thumb {
+     background: #00aaff;
+     border-radius: 10px;
+ }
